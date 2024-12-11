@@ -1,5 +1,5 @@
 .about-section {
-  min-height: 100vh;
+  min-height: 65vh;
   position: relative;
 }
 
@@ -33,10 +33,6 @@
   float: right;
 }
 
-.about-section .right .top {
-  
-}
-
 .text-yellow {
   color: yellow;  
 }
@@ -58,8 +54,7 @@
 .avatar-img {
   width: 300px;
   height: 300px;
-  border-radius: 50rem;
-  border: 18px double #00FF00;
+  border-radius: 1rem;
 }
 
 .fs-text {

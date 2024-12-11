@@ -6,11 +6,8 @@ export default class Footer extends Component {
     return (
       <div className="footer-section" id="contact">
         <div className="e-mail">
-          <div>jradack.tech@gmail.com</div>
-          <div>+1 650 385 8062</div>
-        </div>
-        <div className="copyright">
-          <div>$kype: live:.cid.a6b4066a3f33fe29</div>
+          <div>landrysome001@gmail.com</div>
+          <div>+1 678 666 0093</div>
         </div>
       </div>
     );

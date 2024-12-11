@@ -38,7 +38,7 @@ export default class CustomNavbar extends Component {
       <Navbar id="navbar-section" className="navbar-section">
         <Nav.Item>
           <Nav.Link className="ken-johnson" href="/" eventKey="1">
-            Jacob R.
+            Landry S.
           </Nav.Link>
         </Nav.Item>
         <div className={this.state.active ? "nav-links-container" : "nav-links-container-active"}>
@@ -55,10 +55,10 @@ export default class CustomNavbar extends Component {
             Contact
           </Link>
           <div className="linkedin-github">
-            <a href="https://www.linkedin.com/in/jacob-radack/" target="_blank">
+            <a href="https://www.linkedin.com/in/lsome/" target="_blank">
               <Image src="assets/Logos/linkedin.png" className="icons-navbar" />
             </a>
-            <a href="https://github.com/jradack-tech" target="_blank">
+            <a href="https://github.com/landry-some" target="_blank">
               <Image src="assets/Logos/github.png" className="icons-navbar" />
             </a>
           </div>

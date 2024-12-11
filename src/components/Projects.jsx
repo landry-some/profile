@@ -34,7 +34,6 @@ export default class Projects extends Component {
 
   handleSwitch(item) {
     var trueOrFalse = this.state[item];
-    console.log(trueOrFalse);
     this.setState({ [item]: !trueOrFalse });
   }
 
@@ -65,50 +64,41 @@ export default class Projects extends Component {
         <div className="project-organize">
           <h2 className="project-organize-title">Top skills:</h2>
           <div className={this.state.ReactJS ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("ReactJS"); }}><div>ReactJS</div></div>
-          <div className={this.state.Solidity ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Solidity"); }}><div>Solidity</div></div>
-          <div className={this.state.Rust ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Rust"); }}><div>Rust</div></div>
-          <div className={this.state.ERC20 ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("ERC20"); }}><div>ERC-20</div></div>
-          <div className={this.state.ERC721 ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("ERC721"); }}><div>NFT/ERC-721</div></div>
-          <div className={this.state.AWS ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("AWS"); }}><div>AWS</div></div>
-          <div className={this.state.Node ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Node"); }}><div>Node</div></div>
+          <div className={this.state.Golang ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Golang"); }}><div>Golang</div></div>
           <div className={this.state.Python ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Python"); }}><div>Python</div></div>
-          <div className={this.state.JavaScript ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("JavaScript"); }}><div>HTML/JS/CSS</div></div>
-          <div className={this.state.ETH ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("ETH"); }}><div>ETH</div></div>
-          <div className={this.state.BSC ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("BSC"); }}><div>BSC</div></div>
-          <div className={this.state.Polygon ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Polygon"); }}><div>Polygon</div></div>
-          <div className={this.state.SmartContract ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("SmartContract"); }}><div>Smart Contract</div></div>
-          <div className={this.state.Blockchain ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Blockchain"); }}><div>Blockchain</div></div>
+          <div className={this.state.Node ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Node"); }}><div>Node</div></div>
+          <div className={this.state.AWS ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("AWS"); }}><div>AWS</div></div>
+          <div className={this.state.Docker ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Docker"); }}><div>Docker</div></div>
+          <div className={this.state.Kubernetes ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Kubernetes"); }}><div>Kubernetes</div></div>
+          <div className={this.state.Jenkins ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Jenkins"); }}><div>Jenkins</div></div>
+          <div className={this.state.SQL ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("SQL"); }}><div>SQL</div></div>
+          <div className={this.state.NoSQL ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("NoSQL"); }}><div>NoSQL</div></div>
+          <div className={this.state.Kafka ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Kafka"); }}><div>Kafka</div></div>
+          <div className={this.state.SQS ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("SQS"); }}><div>SQS</div></div>
+          <div className={this.state.Grafana ? "project-organize-skill highlight" : "project-organize-skill"} onClick={() => { this.handleSwitch("Grafana"); }}><div>Grafana</div></div>
         </div>
         <ul>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
-          <li className={uasFrontEnd ? "project-item highlight" : "project-item"}>
+          <li className={imageFilter ? "project-item highlight" : "project-item"}>
             <span></span>
-            <div class="title">Open EDX Microfrontend Development</div>
-            <div className="date-mobile">July 2021 - Present</div>
-            <div class="location">Learning Managment System for Eduforma/Univo</div>
-            <div className="project-skills"><strong>Skills:</strong>&nbsp;
-              <span>Open Edx, React, Django, MySQL, MongoDB, GraphQL</span>
-              <div>&nbsp;&nbsp;&nbsp;&nbsp;AWS (EC2, ECS, Fargate, SMS, SNS, Cloudfront, Lambda, API Gateway, Cluster, VPC, Load Balancer)
-              </div>
-            </div>
-            <div class="info">&nbsp;&nbsp;Professors can create/edit their courses in open edx and students enroll courses to get validated grades. Current trend is to migrate each components to React based Micro frontends. This platform is based on Openedx latest version - lilac, and all frontends are migrated to MFEs; app, auth, admin and class. Students use auth and app MFEs to learn courses created by administrators or support team. Admin can monitor activities of students in their admin panel like course time taken, login history, certificate obtained, course completion, email/sms notification. Open edx support some useful REST apis, but those are not enough to build MFEs and here GraphQL is introduced to manage databases. Various AWS resources are used and infrastructure is built for the final deployment.</div>
-            <div class="info mt-2 mb-2">&nbsp;&nbsp;<b>My role:</b> I've developed the MFEs and GraphQL from the start. MFEs should be based on edx provided theme, and many configure settings are required to launch. And also built the whole infrastructure in aws using various resources to handle thousands of requests while keeping secure our site.</div>
-            <a className={urlearn ? "website-highlighted" : "website"} href="https://app.digitallearningsolution.net/app" target="_blank">https://app.digitallearningsolution.net</a><br />
-            <a className={urlearn ? "website-highlighted" : "website"} href="https://app.formaltic.cloudplateforme.com/app" target="_blank">https://app.formaltic.cloudplateforme.com/app</a><br />
-            <a className={urlearn ? "website-highlighted" : "website"} href="https://app.2km.cloudplateforme.com/app" target="_blank">https://app.2km.cloudplateforme.com/app</a>
+            <div class="title">Slack Generative AI Chatbot</div>
+            <div className="date-mobile">Jul 2024 - Present</div>
+            <div class="location">Hooley Solutions (Pleasant Grove, UT)</div>
+            <div className="project-skills"><strong>Skills:</strong> Bot, Go, Python, Gen AI/Plugin, LLM, Slack API, DynamoDB, Lambda, AWS</div>
+            <div class="info">I developed and deployed a Slack generative chatbot using Go/Python, integrating it with the Slack API and leveraging NLP models like OpenAI GPT for real-time, context-aware conversational interactions. The bot was designed to handle dynamic message parsing, interactive commands, and generate relevant responses to enhance collaboration within Slack workspaces. I also optimized its scalability and efficiency by implementing containerized deployment, ensuring robust API communication, and integrating with CI/CD pipelines for seamless updates.</div>
+            <div class="info mt-2 mb-2">&nbsp;&nbsp;<b>My role: </b>I've developed Slack/Gen AI API connections and developed most of the prototypes while testing on it.</div>
             <div className="project-image-container">
-              <img className="project-image" src="assets/edu1.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/edu1.png", "Homepage"); }} />
-              <img className="project-image" src="assets/edu3.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/edu3.png", "Admin Panel"); }} />
+              <img className="project-image" src="assets/tradeasy1.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/tradeasy1.png", "Black and white filter"); }} />
             </div>
             <div class="date">
-              <span>Present -<br />July 2021</span>
+              <span>Jul 2024 -<br />Present</span>
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
           <li className={urlearn ? "project-item highlight" : "project-item"}>
             <span></span>
             <div class="title">Blockchain Lotery Game Site</div>
-            <div className="date-mobile">October, 2021 - December, 2021</div>
+            <div className="date-mobile">Jan, 2024 - Jul, 2024</div>
             <div class="location">Blockchain DApp</div>
             <div className="project-skills"><strong>Skills:</strong> ERC20, Smart Contract, React, Solidity, Blockchain, BSC, Web3, Node, MySQL</div>
             <div class="info">&nbsp;&nbsp;Created an website that users can participate 3 game activities: Dice, Coin flip and Wheel. By prediction of the possible output, users can earn crypto of loss. The program randomly show the target result and announce the user who win the game and make payment. Users should connect their wallet to the site and can take crypto anytime they want.</div>
@@ -119,27 +109,33 @@ export default class Projects extends Component {
               <img className="project-image" src="assets/sloto2.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/sloto2.png", "Dice"); }} />
             </div>
             <div class="date">
-              <span>December, 2021 -<br />October, 2021</span>
+              <span>Jan, 2024 -<br />Jul, 2024</span>
             </div>
           </li>
-
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
-          <li className={imageFilter ? "project-item highlight" : "project-item"}>
+          <li className={uasFrontEnd ? "project-item highlight" : "project-item"}>
             <span></span>
-            <div class="title">Tradeasy Site Development</div>
-            <div className="date-mobile">September 2021</div>
-            <div class="location">Company Project</div>
-            <div className="project-skills"><strong>Skills:</strong> Binance, XTB, Binance API, React, Node, MySQL, Python</div>
-            <div class="info">Tradeasy is trading site with Binance/XTB and other platforms. Admin panel support various strategies so that users can estimate and emulate their trading policy in their admin panel. Users can save and evaluate which policy is good to trade (buy/sell) ethereum and other coins.</div>
-            <div class="info mt-2 mb-2">&nbsp;&nbsp;<b>My role: </b>I've developed API connections to Binance/XTB and modified most of the admin design while keeping responsive. It also introduces tradingview chart to visualize.</div>
+            <div class="title">LMS Micro frontends</div>
+            <div className="date-mobile">May 2017 - Jul 2021</div>
+            <div class="location">Silicon Slopes Consulting (Draper, UT)</div>
+            <div className="project-skills"><strong>Skills:</strong>&nbsp;
+              <span>Open Edx, React, Golang, Django, MySQL, MongoDB, GraphQL, Lambda, AWS infrastructure, Terraform</span>
+            </div>
+            <div class="info">&nbsp;&nbsp;Professors can manage and modify their courses within Open edX, allowing students to enroll and earn validated grades. The platform is transitioning to React-based Micro Frontends (MFEs) for each component, aligning with current trends. Built on the latest Open edX version (Lilac), all key frontends, including app, auth, admin, and class, have been migrated to MFEs. Students interact with the app and auth MFEs to access and complete courses designed by administrators or support teams. Administrators utilize the admin panel to monitor student activity, such as course duration, login records, certificates earned, course completion status, and sending notifications via email or SMS. While Open edX offers REST APIs, they are insufficient for building MFEs, leading to the adoption of GraphQL for database management. The platform also leverages various AWS services and infrastructure to enable efficient final deployment.</div>
+            <div class="info mt-2 mb-2">&nbsp;&nbsp;<b>My role:</b> I've developed the MFEs and GraphQL from the start. MFEs should be based on edx provided theme, and many configure settings are required to launch. And also built the whole infrastructure in aws using various resources to handle thousands of requests while keeping secure our site.</div>
+
             <div className="project-image-container">
-              <img className="project-image" src="assets/tradeasy1.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/tradeasy1.png", "Black and white filter"); }} />
+              <img className="project-image" src="assets/edu1.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/edu1.png", "Homepage"); }} />
+              <img className="project-image" src="assets/edu3.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/edu3.png", "Admin Panel"); }} />
             </div>
             <div class="date">
-              <span>September 2021</span>
+              <span>May 2017 -<br />Jul 2021</span>
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          
+
+          
           
         </ul>
         <Modal dialogClassName="project-modal" show={this.state.show} onHide={() => this.handleFalse("show")}>
