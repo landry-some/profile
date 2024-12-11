@@ -1,0 +1,73 @@
+.home-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url(./../assets/bg.jpg);
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.home-section .intro {
+  height: auto;
+  width: auto;
+  text-align: center;
+  color: white;
+}
+
+
+.home-section .intro .name {
+  width: auto;
+  height: auto;
+  font-size: 60px;
+  position: relative;
+  text-shadow: 2px 2px 8px white;
+}
+
+.home-section .intro .name::before {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  content: '';
+  background: orange;
+  margin-left: -35px;
+}
+
+.home-section .intro .name::after {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background: orange;
+}
+
+.home-section .intro .desc {
+  width: auto;
+  height: auto;
+  font-size: 27px;
+  padding-top: 10px;
+  color: #00FFFF;
+  text-shadow: 1px 1px 2px white;
+}
+
+.home-section .learn-more {
+  width: auto;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: white !important;
+  bottom: 15px;
+}
+
+.home-section .learn-more:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,277 @@
+.projects-section {
+  position: relative;
+  height: auto;
+}
+
+.projects-section {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.projects-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.project-item {
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+.projects-section ul:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  margin-left: 200px;
+  border: 1px dashed #aaa
+}
+
+.projects-section ul li {
+  margin-left: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.highlight {
+  background-color: orange;
+  border-color: black;
+}
+
+.projects-section ul li > span {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0px;
+  height: 100%;
+  border: 1px solid #aaa;
+}
+
+/*Circles*/
+.projects-section ul li > span:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--theme-color);
+  position: absolute;
+  border-radius: 50%;
+  background: black;
+  left: -5px;
+  top: -10px;
+}
+
+/*Date*/
+.projects-section ul li .date span {
+  position: absolute;
+  left: -370px;
+  top: -18px;
+  width: 300px;
+  text-align: right;
+}
+
+.page-title {
+  text-align: center;
+  color: white;
+}
+
+.project-organize {
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-organize-skill {
+  margin: 0px 20px 20px 20px;
+  border: thin solid;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 10px;
+  line-height: 40px;
+  width: max-content;
+  height: 40px;
+  position: relative;
+}
+
+.project-organize-skill:hover {
+  background-color: var(--theme-color);
+  color: black;
+  border-color: black;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.project-organize-skill div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title {
+  margin: 0px 0px 5px 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.location {
+  margin: 5px 0px 5px 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.project-skills {
+  margin: 5px 0px 5px 10px;
+  color: orange;
+  font-style: italic;
+}
+
+.info {
+  margin-left: 10px;
+  color: #666;
+  width: 90%;
+}
+
+.website {
+  margin: 50px 0px 15px 10px;
+  color: #ccc;
+  width: 90%;
+}
+
+.website:hover {
+  color: var(--theme-color);
+}
+
+.website-highlighted {
+  margin: 50px 0px 15px 10px;
+  color: #ddd;
+  width: 90%;
+}
+
+.website-highlighted:hover {
+  color: black;
+}
+
+.project-image-container {
+  width: 90%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-image {
+  width: 40%;
+  margin: 10px 0px 15px 0px;
+}
+
+.project-image:hover {
+  cursor: pointer;
+}
+
+.project-modal {
+  width: 70vw;
+  max-width: none;
+}
+
+.project-modal-image {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.date {
+  color: #555;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.date-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-section ul:before {
+    display: none;
+  }
+
+  .projects-section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects-section ul li {
+    margin: 0px 0px 10px 0px;
+    width: 90%;
+  }
+
+  .projects-section ul li > span {
+    display: none;
+  }
+
+  .projects-section ul li > span:before {
+    display: none;
+  }
+
+  .projects-section ul li .date span {
+    display: none;
+  }
+
+  .project-item {
+    border: solid;
+    border-color: var(--theme-color);
+  }
+
+  .title {
+    line-height: 50px;
+    margin-left: 0px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .date-mobile {
+    display: inline-block;
+    color: white;
+    text-align: end;
+    font-size: 18px;
+    margin: 5px 0px 5px -10px;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .location {
+    font-weight: 300;
+    margin: 5px 0px 10px 10px;
+  }
+
+  .project-skills {
+    margin-left: 10px;
+  }
+
+  .info {
+    margin-left: 10px;
+  }
+
+  .website {
+    margin-left: 10;
+  }
+
+  .project-image-container {
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+}

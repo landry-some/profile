@@ -1,0 +1,72 @@
+.about-section {
+  min-height: 100vh;
+  position: relative;
+}
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+}
+
+.parallax-content {
+  margin: auto;
+  text-align: center;
+  font-size: 60px;
+  line-height: 15vh;
+  color: white;
+}
+
+.about-section .left {
+  /* height: 85%; */
+  width: 70%;
+  float: left;
+  box-sizing: border-box;
+  padding: 70px;
+  font-size: 22px;
+  color: white;
+}
+
+.about-section .right {
+  /* height: 85%; */
+  width: 30%;
+  float: right;
+}
+
+.about-section .right .top {
+  
+}
+
+.text-yellow {
+  color: yellow;  
+}
+
+.text-red {
+  color: #00FF00;
+}
+
+.text-high {
+  color: yellow;
+  text-shadow: 2px 2px 3px #ccc;
+}
+
+.text-sec {
+  color: #0088FF;
+  font-style: italic;
+}
+
+.avatar-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50rem;
+  border: 18px double #00FF00;
+}
+
+.fs-text {
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+}
