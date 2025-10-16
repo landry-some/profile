@@ -81,8 +81,24 @@ export default class Projects extends Component {
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
           <li className={imageFilter ? "project-item highlight" : "project-item"}>
             <span></span>
+            <div class="title">No-Code Low-Code Solution</div>
+            <div className="date-mobile">Aug 2025 - Present</div>
+            <div class="location">Juvare (Atlanta, GA)</div>
+            <div className="project-skills"><strong>Skills:</strong> Go, REST APIs, Kubernetes, Docker, AWS EKS, CI/CD, Helm, Neo4j, Graph Data, Prometheus, Grafana, AI Integration </div>
+            <div class="info">Developed and optimized high-performance backend services in Golang, implementing RESTful APIs and concurrent processing patterns to support millions of daily transactions. Designed a no-code/low-code solution that builds data and service pipelines from API specs and allows dynamic configuration. Embedded JavaScript logic within components to enable runtime customization. Built a custom Swagger documentation generator and automated deployments through CI/CD pipelines with Docker, GitHub Actions, and Kubernetes.</div>
+            <div class="info mt-2 mb-2">&nbsp;&nbsp;<b>My role: </b>I architected and deployed microservices on AWS EKS, integrating AI-driven quantitative models into UI workflows for automated decision-making. I created code generation engines, interactive low-code dashboards, and custom Kubernetes Operators to enable self-healing infrastructure and scalable automation. I also implemented real-time observability using Prometheus, Grafana, and AWS CloudWatch to proactively monitor system performance and reliability.</div>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/tradeasy0.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/tradeasy0.png", "Black and white filter"); }} />
+            </div>
+            <div class="date">
+              <span>Aug 2025 -<br />Present</span>
+            </div>
+          </li>
+          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          <li className={imageFilter ? "project-item highlight" : "project-item"}>
+            <span></span>
             <div class="title">Slack Generative AI Chatbot</div>
-            <div className="date-mobile">Jul 2024 - Present</div>
+            <div className="date-mobile">Jul 2024 - July 2025</div>
             <div class="location">Hooley Solutions (Pleasant Grove, UT)</div>
             <div className="project-skills"><strong>Skills:</strong> Bot, Go, Python, Gen AI/Plugin, LLM, Slack API, DynamoDB, Lambda, AWS</div>
             <div class="info">I developed and deployed a Slack generative chatbot using Go/Python, integrating it with the Slack API and leveraging NLP models like OpenAI GPT for real-time, context-aware conversational interactions. The bot was designed to handle dynamic message parsing, interactive commands, and generate relevant responses to enhance collaboration within Slack workspaces. I also optimized its scalability and efficiency by implementing containerized deployment, ensuring robust API communication, and integrating with CI/CD pipelines for seamless updates.</div>
@@ -91,7 +107,7 @@ export default class Projects extends Component {
               <img className="project-image" src="assets/tradeasy1.png" onClick={() => { this.handleTrue("show"); this.setModal("assets/tradeasy1.png", "Black and white filter"); }} />
             </div>
             <div class="date">
-              <span>Jul 2024 -<br />Present</span>
+              <span>Jul 2024 -<br />July 2025</span>
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
