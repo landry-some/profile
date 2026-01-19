@@ -99,7 +99,7 @@ export default class Projects extends Component {
             <span></span>
             <div class="title">Slack Generative AI Chatbot</div>
             <div className="date-mobile">Jul 2024 - July 2025</div>
-            <div class="location">Hooley Solutions (Pleasant Grove, UT)</div>
+            <div class="location">JSGuru (New York City, NY)</div>
             <div className="project-skills"><strong>Skills:</strong> Bot, Go, Python, Gen AI/Plugin, LLM, Slack API, DynamoDB, Lambda, AWS</div>
             <div class="info">I developed and deployed a Slack generative chatbot using Go/Python, integrating it with the Slack API and leveraging NLP models like OpenAI GPT for real-time, context-aware conversational interactions. The bot was designed to handle dynamic message parsing, interactive commands, and generate relevant responses to enhance collaboration within Slack workspaces. I also optimized its scalability and efficiency by implementing containerized deployment, ensuring robust API communication, and integrating with CI/CD pipelines for seamless updates.</div>
             <div class="info mt-2 mb-2">&nbsp;&nbsp;<b>My role: </b>I've developed Slack/Gen AI API connections and developed most of the prototypes while testing on it.</div>

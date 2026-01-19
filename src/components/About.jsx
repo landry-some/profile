@@ -16,9 +16,12 @@ export default class About extends Component {
           <div className="row">
             <div className="col-md-7 py-5">
               <div className="mt-4">
-                &nbsp;&nbsp; Experienced and innovative software engineer with 8 years of expertise in designing and implementing cutting-edge software solutions to drive business efficiency. Proficient in all phases of the software development life cycle, from initial planning to
-deployment, with a strong track record of managing projects from start to finish. Known for being a proactive, hands-on leader with a talent for guiding cross-functional teams in high-pressure, deadline-focused environments to deliver projects on time and within
-budget. Core competencies include database management, Golang, Python, Node.js, and React.
+                &nbsp;&nbsp; Golang, Python, and React-focused engineer with over 9 years of experience in full stack development, 
+                focusing on reliability, performance, and real business value. Very experienced across the full software development 
+                lifecycle, from requirements analysis and system architecture through to hands-on implementation, deployment, 
+                and long-term optimization. Known for designing and operating distributed microservices and event-driven systems, 
+                which efficiently handle high throughput and complex workflows. Brings strong backend competencies in high-performance
+                Golang services combined with hands-on frontend experience in building responsive, user-centric interfaces using React.
               </div>
               <div className="mt-4">I can speak fluent English.</div>
             </div>

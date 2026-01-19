@@ -262,7 +262,7 @@ export default class Home extends Component {
         />
         <div className="intro">
           <div className="name">Sankum <span style={{backgroundColor: '#111'}}>Landry</span> Marcel Some</div>
-          <div className="desc">Sr. Go/Web Developer</div>
+          <div className="desc">Senior Software Engineer</div>
         </div>
         <Link className="learn-more" activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={1000}>
           LEARN MORE<br></br>⌵
