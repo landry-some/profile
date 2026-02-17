@@ -82,7 +82,7 @@ export default class Projects extends Component {
           <li className={imageFilter ? "project-item highlight" : "project-item"}>
             <span></span>
             <div class="title">No-Code Low-Code Solution</div>
-            <div className="date-mobile">Aug 2025 - Present</div>
+            <div className="date-mobile">Aug 2025 - Oct 2025</div>
             <div class="location">Juvare (Atlanta, GA)</div>
             <div className="project-skills"><strong>Skills:</strong> Go, REST APIs, Kubernetes, Docker, AWS EKS, CI/CD, Helm, Neo4j, Graph Data, Prometheus, Grafana, AI Integration </div>
             <div class="info">Developed and optimized high-performance backend services in Golang, implementing RESTful APIs and concurrent processing patterns to support millions of daily transactions. Designed a no-code/low-code solution that builds data and service pipelines from API specs and allows dynamic configuration. Embedded JavaScript logic within components to enable runtime customization. Built a custom Swagger documentation generator and automated deployments through CI/CD pipelines with Docker, GitHub Actions, and Kubernetes.</div>
@@ -114,8 +114,6 @@ export default class Projects extends Component {
           <li className={urlearn ? "project-item highlight" : "project-item"}>
             <span></span>
             <div class="title">Blockchain Lotery Game Site</div>
-            <div className="date-mobile">Jan, 2024 - Jul, 2024</div>
-            <div class="location">Blockchain DApp</div>
             <div className="project-skills"><strong>Skills:</strong> ERC20, Smart Contract, React, Solidity, Blockchain, BSC, Web3, Node, MySQL</div>
             <div class="info">&nbsp;&nbsp;Created an website that users can participate 3 game activities: Dice, Coin flip and Wheel. By prediction of the possible output, users can earn crypto of loss. The program randomly show the target result and announce the user who win the game and make payment. Users should connect their wallet to the site and can take crypto anytime they want.</div>
             <div class="info mt-2">&nbsp;&nbsp;My role was to create smart contract based on this logic in BSC, integration with React sites using Web3, React site development with Material UI design.</div>
@@ -133,7 +131,7 @@ export default class Projects extends Component {
             <span></span>
             <div class="title">LMS Micro frontends</div>
             <div className="date-mobile">May 2017 - Jul 2021</div>
-            <div class="location">Silicon Slopes Consulting (Draper, UT)</div>
+            <div class="location">IBM (Salt Lake City, UT)</div>
             <div className="project-skills"><strong>Skills:</strong>&nbsp;
               <span>Open Edx, React, Golang, Django, MySQL, MongoDB, GraphQL, Lambda, AWS infrastructure, Terraform</span>
             </div>
